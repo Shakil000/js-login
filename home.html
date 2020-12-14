@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            margin: auto;
+            padding: 120px;
+            margin-top: 100px;
+            box-sizing: border-box;
+        }
+       
+        
+    </style>
+
+</head>
+<body>
+   <center><h1>Login Page</h1></center> 
+   <hr>
+
+ 
+       <div class="asd">
+       <p>User Name</p>
+<input type="text" name="text" id="uname" placeholder="User Name">
+<p>Password</p>
+<input type="text" name="text" id="pass" placeholder="Password">
+<br><br>
+<button onclick="login()">Submit</button>
+<script>
+    function login(){
+       var un= document.getElementById("uname").value
+        var ps=document.getElementById("pass").value
+
+        if(un=="shakil" && ps=="123"){
+            location.assign("https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_console")
+        }else{
+            window.alert("Wrong")
+        }
+     }
+</script>
+
+   </div>
+</body>
+</html>
